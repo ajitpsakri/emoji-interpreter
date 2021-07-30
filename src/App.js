@@ -4,7 +4,7 @@ import emojiDoc from "./emojiDoc";
 
 export default function App() {
   //Declaring States
-  const [meaning, setMeaning] = useState(" ");
+  const [meaning, setMeaning] = useState("Select Emoji");
   const [emoji, setEmoji] = useState(" ");
   // Display emoji + it's meaning
   const handleInput = (event) => {
@@ -13,7 +13,7 @@ export default function App() {
       setMeaning("This is not found in our Database");
       setEmoji("");
     } else if (currentValue === "") {
-      setMeaning("Paste emoji");
+      setMeaning("Select Emoji");
       setEmoji("");
     } else {
       setMeaning(emojiDoc[event.target.value]);
