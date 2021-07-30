@@ -31,7 +31,6 @@ ul {
 li {
   list-style: none;
   display: inline;
-  padding: 2rem;
   font-size: 2rem;
   cursor: pointer;
   margin: 4rem;
