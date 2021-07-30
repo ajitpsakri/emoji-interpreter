@@ -1,4 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+:root {
+  --primary-color: #f5a962;
+  --secondary-color: #bb371a;
+}
 .App {
-  font-family: sans-serif;
+  font-family: "Satisfy", cursive;
+  background-color: #fffbeb;
+}
+.container-center {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  width: 600px;
+  margin: auto;
   text-align: center;
+  margin-top: 8rem;
+  border-radius: 3rem;
+  box-shadow: 0px 0px 20px;
+  min-width: 70px;
+}
+ul {
+  padding-inline-start: 0px;
+}
+li {
+  list-style: none;
+  display: inline;
+  padding: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+input {
+  width: 400px;
+  height: 60px;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+h2 {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 10px 2px;
+  border-radius: 1rem;
+  width: 398px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+h1 {
+  padding: 1.5rem;
 }

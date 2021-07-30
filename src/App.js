@@ -11,8 +11,10 @@ export default function App() {
     let currentValue = event.target.value;
     if (!emojiDoc.hasOwnProperty(currentValue) && currentValue !== "") {
       setMeaning("This is not found in our Database");
+      setEmoji("");
     } else if (currentValue === "") {
       setMeaning("Paste emoji");
+      setEmoji("");
     } else {
       setMeaning(emojiDoc[event.target.value]);
       setEmoji(event.target.value);
@@ -26,20 +28,23 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Emoji interpreter</h1>
-      {/* input */}
-      <input type="text" placeholder="Paste emoji" onChange={handleInput} />
-      <h2>{emoji}</h2>
-      <h2>{meaning}</h2>
-      <ul>
-        {Object.keys(emojiDoc).map((ele) => {
-          return (
-            <li key={ele} onClick={() => handleEmojiClick(ele)}>
-              {ele}
-            </li>
-          );
-        })}
-      </ul>
+      <div className="container-center">
+        <h1>Emoji interpreter</h1>
+        {/* input */}
+        <input type="text" placeholder="Paste emoji" onChange={handleInput} />
+        <h2>
+          {emoji} {meaning}
+        </h2>
+        <ul>
+          {Object.keys(emojiDoc).map((ele) => {
+            return (
+              <li key={ele} onClick={() => handleEmojiClick(ele)}>
+                {ele}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 }
