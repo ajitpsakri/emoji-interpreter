@@ -7,7 +7,11 @@ const emojiDoc = {
   "🦮": "Guide Dog",
   "🐕‍🦺": "Service Dog",
   "🐩": "Poodle",
-  "🐺": "Wolf"
+  "🐺": "Wolf",
+  "🦝": "Raccoon",
+  "🐱": "Cat Face",
+  "🐈": "Cat",
+  "🐈‍⬛": "Black Cat"
 };
 
 export default emojiDoc;
